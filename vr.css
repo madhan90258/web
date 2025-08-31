@@ -27,6 +27,7 @@ body {
 .lhs-header {
   text-align: center;
   margin-bottom: 15px;
+  background-color: wheat;
 }
 
 .lhs-grid {
@@ -54,3 +55,4 @@ body {
   background: linear-gradient(45deg, #F8FFAE, #43C6AC);
   transform: scale(1.05);
 }
+
