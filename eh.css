@@ -1,0 +1,57 @@
+body {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    /* makes it cover full screen */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    /* avoids tiling */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* equal split */
+  height: 100vh; /* full screen height */
+}
+
+.rhs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lhs {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.lhs-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.lhs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(6, 80px);   /* 6 rows, each 80px tall */
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #43C6AC, #F8FFAE);
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #F8FFAE, #43C6AC);
+  transform: scale(1.05);
+}

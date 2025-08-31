@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* sidebar fixed, content takes rest */
+  height: 100vh; /* full screen height */
+}
+
+.item-1 {
+  padding: 10px;
+  background: radial-gradient(circle,#333399, #ff0033,#333399);
+}
+.item-1 img {
+  padding-top: 75%;
+  width: 200px;
+  height: 200px; /* if you want it exactly square */
+  object-fit: contain; /* keeps proportions without stretching */
+}
+
+.item-2 {
+background-image:url(img/bg.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+.subjects {
+  margin: 10%;
+  flex: 1; /* take full remaining height */
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, 1fr);   /* 3 equal rows */
+  gap: 15px;
+}
+
+.subjects div {
+  background: radial-gradient(circle, #43C6AC, #F8FFAE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid black;
+  color: #000;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #43C6AC, #F8FFAE);
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #F8FFAE, #43C6AC);
+  transform: scale(1.05);
+}
